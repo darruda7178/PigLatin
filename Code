@@ -1,0 +1,9 @@
+userInt = str(input("Enter your word or sentence here: "))
+vowels = 'aeiou'
+
+for word in userInt.split():
+    FirstLetter = word[0]
+    if FirstLetter in vowels:
+       print(f"{userInt}way")
+    else:
+       print(f"{userInt[1:]}{userInt[0]}way")
